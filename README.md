@@ -22,4 +22,4 @@
 - Nick Name
 - Profile Picture
 - Bio
-- Location
+- Date of birth
