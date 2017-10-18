@@ -33,6 +33,18 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Extra gems for Purofiru:
+gem 'devise'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'aws-sdk', '~> 3'
+# Shrine Dependencies
+gem 'fastimage'
+gem 'image_processing'
+gem 'mini_magick'
+gem 'shrine'
+gem 'jquery-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
