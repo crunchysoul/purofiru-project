@@ -18,10 +18,12 @@
   <tbody>
     <% @profiles.each do |profile| %>
       <tr>
+        <% if profile.image %>
+        <td><%= image_tag profile.image_url(:thumb) %></td>
+        <% end %>
         <td><%= profile.first_name %></td>
         <td><%= profile.last_name %></td>
         <td><%= profile.nick_name %></td>
-        <td><%= profile.image_data %></td>
         <td><%= profile.bio %></td>
         <td><%= profile.dob %></td>
         <td><%= link_to 'Show', profile %></td>
